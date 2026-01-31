@@ -1,0 +1,13 @@
+target/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# H2
+*.mv.db
+*.trace.db
+
+# Uploads (stored locally)
+uploads/
