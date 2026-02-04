@@ -26,7 +26,7 @@ jobs:
         run: mvn clean verify
 
       - name: SonarCloud Scan
-        uses: SonarSource/sonarqube-scan-action@v5
+        uses: SonarSource/sonarqube-scan-action@v6
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         with:
@@ -34,5 +34,4 @@ jobs:
             -Dsonar.projectKey=srinivash21_bitdding-backend
             -Dsonar.organization=srinivash21
             -Dsonar.sources=src/main/java
-            -Dsonar.tests=src/test/java
             -Dsonar.java.binaries=target/classes
