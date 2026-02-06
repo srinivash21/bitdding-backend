@@ -19,13 +19,15 @@ spring:
       path: /h2
   servlet:
     multipart:
-      max-file-size: 5MB
-      max-request-size: 6MB
+      max-file-size: 10MB
+      max-request-size: 11MB
 
 app:
-  uploads-dir: uploads
+  uploads-dir: ./uploads
+  base-url: ""  # For local: leave empty or use http://localhost:8080, For production: https://bitdding-backend.onrender.com
   cors:
     allowed-origins:
       - "http://localhost:5173"
       - "http://127.0.0.1:5173"
+      - "https://bitdding-frontend.vercel.app"
       - "*"

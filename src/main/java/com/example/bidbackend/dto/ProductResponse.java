@@ -12,5 +12,5 @@ public record ProductResponse(
 		BigDecimal currentPrice,
 		LocalDateTime endTime,
 		String status,
-		String imageFilename
+		String imageUrl
 ) {}
