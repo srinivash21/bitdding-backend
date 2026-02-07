@@ -23,7 +23,7 @@ spring:
       max-request-size: 11MB
 
 app:
-  uploads-dir: uploads
+  uploads-dir: ./uploads
   base-url: ""  # For local: leave empty or use http://localhost:8080, For production: https://bitdding-backend.onrender.com
   cors:
     allowed-origins:
